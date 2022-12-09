@@ -9,17 +9,17 @@
 завершить программу.
 """
 
-sum = 0.0
+result = 0.0
 compete = False
 while True:
     command = input('Введите числа разделяя пробелом (q - Выход): \n')
     for el in command.split():
         if el != 'q':
-            sum += float(el)
+            result += float(el)
         else:
-            print(f'Сумма = {sum}')
+            print(f'Сумма = {result}')
             compete = True
     if not compete:
-        print(f'Сумма = {sum}')
+        print(f'Сумма = {result}')
     else:
         break

@@ -5,17 +5,18 @@
 Осуществить вывод данных о пользователе одной строкой.
 """
 
+
 def new_user(**kwargs):
     """
     Функция возвращает строку с данными о пользователе
     :param kwargs: Данные пользователя
     :return: str
     """
-    user = ''
-    for v in kwargs.values():
-        user += f'{v} '
-    return user
+    print(f'Имя: {kwargs["name"]} Фамилия: {kwargs["surname"]} '
+          f'Дата рождения: {kwargs["bithday"]} Город: {kwargs["city"]} '
+          f'E-mail: {kwargs["e_mail"]} Телефон: {kwargs["phone"]}')
 
-print(new_user(name='Дартаньян', surname='Колобков',
-               bithday='2022', city='Челябинск',
-               e_mail='kolobkov@gmail.com', phone='+7(900)000-00-00'))
+
+new_user(name='Дартаньян', surname='Колобков',
+         bithday='2022', city='Челябинск',
+         e_mail='kolobkov@gmail.com', phone='+7(900)000-00-00')

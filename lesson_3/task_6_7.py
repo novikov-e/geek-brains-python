@@ -8,6 +8,7 @@ print(int_func(‘text’)) -> Text.
 заглавной буквы. Используйте написанную ранее функцию int_func().
 """
 
+
 def int_func(word: str):
     """
     Функция заменяет первые буквы слов на заглавные
@@ -15,5 +16,6 @@ def int_func(word: str):
     :return: отредактированная строка
     """
     return word.title()
+
 
 print(int_func('one two three'))

@@ -3,6 +3,7 @@
 возвращает сумму наибольших двух аргументов.
 """
 
+
 def sum_of_large(a, b, c):
     """
     Функция возвращает сумму двух наибольших аргументов
@@ -21,6 +22,7 @@ def sum_of_large(a, b, c):
             return b * a
         else:
             return b * c
+
 
 print(sum_of_large(2, 4, 6))
 print(sum_of_large(2, 6, 4))

@@ -4,20 +4,24 @@
 обработку ситуации деления на ноль.
 """
 
-def devide(a=None, b=None):
+
+def division(first_num, second_num):
     """
     Функция производит деление числа а на число b
-    :param a: частное
-    :param b: делитель
+    :param first_num: частное
+    :param second_num: делитель
     :return: результат
     """
-    if a is None:
-        a = float(input('Введите первое число: '))
-    if b is None:
-        b = float(input('Введите второе число: '))
     try:
-        return a / b
+        return first_num / second_num
     except ZeroDivisionError:
         print('Деление на ноль недопустимо!')
+    return None
 
-print(f'Результат = {devide()}')
+
+try:
+    first_number = float(input('Введите первое число: '))
+    second_number = float(input('Введите второе число: '))
+    print(division(first_number, second_number))
+except ValueError:
+    print('Пожалуйста введите число!')
