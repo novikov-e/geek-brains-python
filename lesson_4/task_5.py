@@ -9,16 +9,4 @@
 from functools import reduce
 
 my_list = (el for el in range(100, 1001) if el % 2 == 0)
-
-
-def multiply(first, second):
-    """
-    Функция вычисляет произведение двух чисел
-    :param first: первое число
-    :param second: второе число
-    :return: произведение
-    """
-    return first * second
-
-
-print(reduce(multiply, my_list))
+print(reduce(lambda first, second: first * second, my_list))

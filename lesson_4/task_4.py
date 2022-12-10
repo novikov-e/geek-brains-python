@@ -25,6 +25,5 @@ def uniq(element):
     return False
 
 
-result = [el for el in my_list if uniq(el)]
-print(result)
-
+for el in (el for el in my_list if uniq(el)):
+    print(el)
